@@ -1,0 +1,7 @@
+---
+Name: facebookroutes
+After: framework/_config/routes#coreroutes
+---
+SilverStripe\Control\Director:
+  rules:
+    'facebook//$Action/$ID/$Name': 'AdrHumphreys\FacebookUploader\Controllers\FacebookController'
